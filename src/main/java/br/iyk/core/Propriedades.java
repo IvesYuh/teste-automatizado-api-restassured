@@ -1,4 +1,4 @@
-package br.solus.core;
+package br.iyk.core;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class Propriedades {
 	
-public static Ambiente AMBIENTE = Ambiente.JENKINS;
+public static Ambiente AMBIENTE = Ambiente.DESENVOLVIMENTO;
 	
 	public static String versao = "";
 
@@ -30,10 +30,10 @@ public static Ambiente AMBIENTE = Ambiente.JENKINS;
 		
 		switch (versaoArquivo.trim()) {
 		case "develop":
-			Propriedades.versao = "teste_projetos";
+			Propriedades.versao = "base1";
 			break;
 		case "release":
-			Propriedades.versao = "teste_projetos";
+			Propriedades.versao = "base2";
 			break;
 		}
 		return versaoArquivo.trim();
@@ -41,7 +41,7 @@ public static Ambiente AMBIENTE = Ambiente.JENKINS;
 	
 	private static Properties loadProperties() {
 		try (FileInputStream fs = new FileInputStream(
-				"C:\\Solus\\jenkins\\versao.properties")
+				"C:\\Iyk\\jenkins\\versao.properties")
 		) {
 			Properties props = new Properties();
 			props.load(fs);

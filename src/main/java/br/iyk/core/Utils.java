@@ -1,4 +1,4 @@
-package br.solus.core;
+package br.iyk.core;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

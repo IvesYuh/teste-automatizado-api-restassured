@@ -1,4 +1,4 @@
-package br.solus.core;
+package br.iyk.core;
 
 public class ArquivoException extends RuntimeException {
 

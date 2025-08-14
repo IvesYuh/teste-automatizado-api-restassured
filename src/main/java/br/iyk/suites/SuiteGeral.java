@@ -1,11 +1,11 @@
-package br.solus.suites;
+package br.iyk.suites;
 
 import org.junit.jupiter.api.Test;
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 
-import br.solus.core.BaseToken;
-import br.solus.core.BaseTest;
+import br.iyk.core.BaseTest;
+import br.iyk.core.BaseToken;
 
 @Suite
 @SelectClasses({ 

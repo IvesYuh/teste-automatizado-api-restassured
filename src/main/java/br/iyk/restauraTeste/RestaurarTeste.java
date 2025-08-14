@@ -1,4 +1,4 @@
-package br.solus.restauraTeste;
+package br.iyk.restauraTeste;
 
 public class RestaurarTeste {
 }

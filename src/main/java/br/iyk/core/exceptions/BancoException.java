@@ -1,4 +1,4 @@
-package br.solus.core.exceptions;
+package br.iyk.core.exceptions;
 
 public class BancoException extends RuntimeException {
 

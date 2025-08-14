@@ -1,4 +1,4 @@
-package br.solus.core;
+package br.iyk.core;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -16,8 +16,8 @@ public class Banco {
 		Propriedades.defineVersao();
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@172.16.80.4:1521/soluspdb", Propriedades.versao,
-					"Oportunidade2023");
+			conn = DriverManager.getConnection("conexaoBanco", Propriedades.versao,
+					"senhaBanco");
 			conn.setAutoCommit(true);
 		} catch (ClassNotFoundException | SQLException e) {
 			throw new DbException(e.getMessage());
